@@ -1,0 +1,5 @@
+model_file,accuracy,precision_fake,recall_fake,f1_fake
+naive_bayes_pipeline.pkl,0.8194,0.8216,0.9957,0.9003
+svm_pipeline.pkl,0.8465,0.8543,0.9798,0.9128
+random_forest_pipeline.pkl,0.8442,0.8521,0.9798,0.9115
+xgboost_pipeline.pkl,0.8477,0.8599,0.9726,0.9128
