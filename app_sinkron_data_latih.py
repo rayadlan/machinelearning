@@ -17,7 +17,7 @@ MODEL_FILES = {
     "XGBoost": "xgboost_pipeline.pkl",
 }
 
-SAMPLE_TEXT = "Universitas dan pihak kampus memberikan klarifikasi resmi bahwa kegiatan akademik tetap berjalan normal berdasarkan informasi terverifikasi."
+SAMPLE_TEXT = "Tuduhan Konspirasi Pistol Yang Dipakai Teroris Bom Sarinah,senjata yang dipakai oleh teroris Sarinah dituduh berasal dari militer / pemerintah."
 
 
 class DenseTransformer:
@@ -79,7 +79,7 @@ if "news_text" not in st.session_state:
     st.session_state.news_text = ""
 
 st.title("Deteksi Fake News Berita Online Indonesia")
-st.caption("Menggunakan dataset Data_latih.csv dengan fitur judul + narasi, TF-IDF, dan model Naive Bayes, SVM, Random Forest, serta XGBoost.")
+st.caption("Menggunakan dataset Data_latih_50_50_oversampling.csv dengan fitur judul + narasi, TF-IDF, dan model Naive Bayes, SVM, Random Forest, serta XGBoost.")
 
 eval_df = load_evaluation_results()
 if eval_df is not None and not eval_df.empty:
